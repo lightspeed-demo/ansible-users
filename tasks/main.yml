@@ -6,6 +6,7 @@
   with_items: "{{ groups_to_create }}"
   tags: ["users", "groups", "configuration"]
 
+
 - name: Per-user group creation
   group:
     name: "{{ item.username }}"
