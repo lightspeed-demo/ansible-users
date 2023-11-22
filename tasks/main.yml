@@ -70,3 +70,7 @@
   with_items: "{{ users_deleted }}"
   when: users_create_per_user_group
   tags: ["users", "configuration"]
+
+- name: Show ip
+  ansible.utils.cli_parse:
+    command: show ip
